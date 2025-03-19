@@ -1,7 +1,7 @@
 const secondsText = document.getElementById("seconds");
 const outputText = document.getElementById("output");
 function convertSeconds() {
-  const seconds = parseInt(secondsText.value);
+  const seconds = parseInt(secondsText.value, 10);
   const secondsRemaining = seconds % 60;
   const minutes = Math.floor(seconds / 60);
   const minutesRemaining = minutes % 60;
